@@ -17,11 +17,13 @@
                     <td>Nama</td>
                     <td>Program Studi</td>
                     <td>Tempat</td>
-                    <td>Tanggal Lahir</td>
                     <td>Jenis Kelamin</td>
+                    <td>Tanggal Lahir</td>
                     <td>Agama</td>
+                    
                 </tr>
             </thead>
+            <a href="tambah.php">(+)Tambah Data Mahasiswa</a>
             <tbody>
                 <?php
                 $sql = "select * from mahasiswa";
@@ -33,8 +35,8 @@
                         echo "<td>".$mahasiswa['nama']."</td>";
                         echo "<td>".$mahasiswa['prodi']."</td>";
                         echo "<td>".$mahasiswa['tempat']."</td>";
+                        echo "<td>".$mahasiswa['jk']."</td>";
                         echo "<td>".$mahasiswa['tanggal_lahir']."</td>";
-                        echo "<td>".$mahasiswa['jenis_kelamin']."</td>";
                         echo "<td>".$mahasiswa['agama']."</td>";
                     echo "</tr>";
                 
