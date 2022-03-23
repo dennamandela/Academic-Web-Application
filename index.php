@@ -20,6 +20,7 @@
                     <td>Jenis Kelamin</td>
                     <td>Tanggal Lahir</td>
                     <td>Agama</td>
+                    <td>Aksi</td>
                     
                 </tr>
             </thead>
@@ -38,6 +39,11 @@
                         echo "<td>".$mahasiswa['jk']."</td>";
                         echo "<td>".$mahasiswa['tanggal_lahir']."</td>";
                         echo "<td>".$mahasiswa['agama']."</td>";
+
+                        echo "<td>";
+                        echo "<a href='form-edit.php?nim=".$mahasiswa['nim']."'>Edit </a>| ";
+                        echo "<a href='hapus.php?nim=".$mahasiswa['nim']."'>Hapus</a>";
+                        echo "</td>";
                     echo "</tr>";
                 
                 }
